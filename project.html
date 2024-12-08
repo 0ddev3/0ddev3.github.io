@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ev3 - Projects</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+            rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="container-fluid">
+                <!-- Navbar brand (Ev3) -->
+                <a class="navbar-brand" onclick="resetToIntro()" href="#">
+                    Ev3 <i class="bi bi-moon-stars"></i>
+                </a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible section -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="main.html"
+                                onclick="resetToIntro">Home<i
+                                    class="bi bi-dot"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white"
+                                href="personal.html">Personal<i
+                                    class="bi bi-dot"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white"
+                                href="projects.html">Projects<i
+                                    class="bi bi-dot"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white"
+                                href="contact.html">Contact<i
+                                    class="bi bi-dot"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Page Header -->
+        <header class="text-center " id="projectsHeader">
+            <h1 class="display-1">My Projects</h1>
+        </header>
+
+        <!-- Project Sections -->
+        <section class="ProjectsSections py-5">
+            <div class="container">
+                <!-- Java Projects Section -->
+                <h2 id="JavaHeader" class="text-left mb-4">Java Projects </h2>
+                <div class="row">
+                    <!-- Project Card 1 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="addFigtherProgramSS.PNG"
+                                class="card-img-top"
+                                alt="Java Project Screenshot">
+                            <div class="card-body">
+                                <h5 class="card-title">Marvel Vs Dc Java FX</h5>
+                                <p class="card-text">
+                                    A dynamic JavaFX project where users can
+                                    create and manage fighters. Key features
+                                    include adding new characters, searching for
+                                    existing ones, and handling eventswith Scene Builder.
+                                </p>
+                                <a href="https://github.com/0ddev3/MarvelVsDcFX"
+                                    target="_blank" class="btn btn-primary">View
+                                    on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="screenShotmarvelVSDC.PNG"
+                                class="card-img-top"
+                                alt="Java Project Screenshot">
+                            <div class="card-body">
+                                <h5 class="card-title">Marvel Vs Dc </h5>
+                                <p class="card-text">
+                                    The Marvel vs DC Character Simulator is a
+                                    Java program that simulates battles between
+                                    Marvel and DC characters. It uses
+                                    object-oriented programming concepts like inheritance,
+                                    polymorphism, and object oriented programming.
+
+                                </p>
+                                <a
+                                    href="https://github.com/0ddev3/MarvelVsDC-Simulation"
+                                    target="_blank" class="btn">View
+                                    on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 (New Row for Alignment) -->
+                <div class="row">
+                    <div class="col-md-6 mb-4 mx-auto">
+                        <div class="card shadow-sm">
+                            <img src="ss2.PNG" class="card-img-top"
+                                alt="Java Project Screenshot">
+                            <div class="card-body">
+                                <h5 class="card-title">FSCrecurse</h5>
+                                <p class="card-text">
+                                    This program solves four recursive problems
+                                    based on user commands. The program reads
+                                    user input, processes commands, and prints
+                                    results to the console.
+                                </p>
+                                <a href="https://github.com/0ddev3/FSCrecurse"
+                                    target="_blank" class="btn">View
+                                    on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- hr line for desgin-->
+                <hr id="hrForMain" class="mt-5">
+
+                <!-- Python Projects Section -->
+                <h2 id="PythonHeader" class="text-left mt-5 mb-4">Python Projects</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4 mx-auto">
+                        <div class="card shadow-sm">
+                            <img src="pyProgramSS1.PNG" class="card-img-top"
+                                alt="Python Project Screenshot">
+                            <div class="card-body">
+                                <h5 class="card-title">Day In the Life</h5>
+                                <p class="card-text">
+                                    This project tested our Python skills by
+                                    creating a simple story-based game. Players
+                                    make choices that shape the narrative,
+                                    practicing UI/UX design and basic Python
+                                    concepts.
+                                </p>
+                                <a
+                                    href="https://github.com/0ddev3/PyGame/blob/main/Yvette_Boyd_and_Alex_Final_project.py"
+                                    target="_blank" class="btn">View
+                                    on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer>
+            <!-- Social Media Links -->
+            <div class="social-media py-5 text-center">
+                <a
+                    href="https://www.instagram.com/_0dd.x/profilecard/?igsh=MTViY3hnd3hxNmsydQ=="
+                    target="_blank" class="social-icon">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://youtube.com/@0ddpsycho?si=BnZ9A3rf6ER9Pneb"
+                    target="_blank" class="social-icon">
+                    <i class="bi bi-youtube"></i>
+                </a>
+                <a href="https://github.com/0ddev3" target="_blank"
+                    class="social-icon">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a
+                    href="https://www.facebook.com/share/1GqG9V3Fnf/?mibextid=LQQJ4d"
+                    target="_blank" class="social-icon">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </div>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="code.js"></script>
+    </body>
+</html>

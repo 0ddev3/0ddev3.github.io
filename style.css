@@ -1,0 +1,211 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    line-height: 1.6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#contactHeader {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: #7f5a91;
+}
+
+form {
+    background-color: #7f5a91;
+}
+
+.prompt {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 700px;
+    padding: 0 15px;
+    font-size: 1.1rem;
+
+}
+
+.navbar {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgb(56, 7, 56);
+    color: #F9F8F8;
+
+}
+
+.navbar-brand,
+.nav-link,
+.nav-item {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.navbar-brand:hover {
+    color: rgb(197, 166, 233);
+}
+
+#navbarContent {
+    background-color: rgb(56, 7, 56);
+}
+
+#submitBtn {
+    background-color: rgb(56, 7, 56);
+    display: block;
+    margin: 20px auto;
+}
+
+#submitBtn:hover {
+    background-color: #e99b01;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+    background-color: rgb(56, 7, 56);
+}
+
+#projectsHeader {
+    margin-top: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #7f5a91;
+    color: #F9F8F8;
+    padding: 15%;
+    text-shadow: 1px 2px 5px #221838;
+    cursor: pointer;
+}
+
+.ProjectsSections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#JavaHeader {
+    background-color: #7f5a91;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-shadow: 1px 2px 5px #221838;
+    width: 200px;
+}
+
+#PythonHeader {
+    background-color: #7f5a91;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-shadow: 1px 2px 5px #221838;
+    width: 230px;
+}
+
+#hrForMain {
+    width: 80%;
+    margin: 20px auto;
+    height: 4px;
+    background-color: #470a63;
+    box-shadow: 0 2px 4px #310446;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: #fcbf49;
+    color: white;
+    border: none;
+    text-shadow: 1px 2px 1px#c7701a;
+}
+
+.btn:hover {
+    background-color: #e99b01;
+}
+
+.card-title {
+    cursor: pointer;
+    background-color: #7f5a91;
+    width: 150px;
+    height: fit-content;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 1px 2px 3px #310446;
+    color: #fff;
+
+}
+
+.card-text {
+    color: #310446;
+}
+
+.social-icon {
+    font-size: 30px;
+    margin: 0 15px;
+    color: #f6f0f8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #fcbf49;
+
+}
+
+.social-media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+
+#contactHeader {
+    color: white;
+    border-radius: 10px;
+    background-color: #e99b01;
+    width: 40%;
+    cursor: pointer;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+    #headerh2 {
+        margin-left: 10%;
+    }
+
+    .carousel-inner img {
+        max-height: 400px;/
+    }
+
+    .carousel {
+        max-width: 900px;
+    }
+
+}
+
+/* Smaller screens */
+@media (max-width: 767px) {
+    .profile-photo {
+        max-width: 200px;
+    }
+
+    .carousel-inner img {
+        max-height: 300px;
+    }
+
+    .carousel {
+        max-width: 100%;
+    }
+}

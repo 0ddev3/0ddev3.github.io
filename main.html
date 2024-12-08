@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ev3</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+  </head>
+  <body id="MainBODY">
+
+    <div id="mainContent">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container-fluid">
+          <!-- Navbar brand (Ev3) -->
+          <a class="navbar-brand" onclick="resetToIntro()" href="#">
+            Ev3 <i class="bi bi-moon-stars"></i>
+          </a>
+          <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Collapsible section -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="main.html"
+                  onclick="resetToIntro">Home<i
+                    class="bi bi-dot"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white"
+                  href="personal.html">Personal<i
+                    class="bi bi-dot"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white"
+                  href="projects.html">Projects<i
+                    class="bi bi-dot"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white"
+                  href="contact.html">Contact<i
+                    class="bi bi-dot"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Time Section -->
+      <section class="py-5 align-items-center
+      text-center">
+        <div class="timeContainer text-center" id="timeDiv">
+          <p id="currentTime"><span id="time"></span></p>
+        </div>
+      </section>
+
+      <!-- Image Section -->
+      <section class="container-fluid justify-content-center text-center px-0">
+        <div>
+          <img src="purpleFlowerGif.gif" alt="Flower picture"
+            class="img-fluid" id="flowerImg">
+        </div>
+        <hr id="hrForMain">
+        <div id="headerh2">
+          <h2 id="dailyQuoteHeader">Daily Positive Quotes</h2>
+        </div>
+        <!-- (Quote Generator) -->
+        <div
+          class="container-fluid QuoteGen justify-content-center text-center px-0"
+          id="quoteDisplay">
+          <p id="quoteText">We live to make the impossible possible. That is our
+            focus."</p>
+          <button id="newQuoteBtn" class="quoteBtn">Click Me!</button>
+        </div>
+      </section>
+      <br>
+      <hr id="hrForMain" class="mt-5">
+
+      <section>
+        <!-- Social Media Links -->
+        <div class="social-media py-5 text-center">
+          <a
+            href="https://www.instagram.com/_0dd.x/profilecard/?igsh=MTViY3hnd3hxNmsydQ=="
+            target="_blank" class="social-icon">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://youtube.com/@0ddpsycho?si=BnZ9A3rf6ER9Pneb"
+            target="_blank" class="social-icon">
+            <i class="bi bi-youtube"></i>
+          </a>
+          <a href="https://github.com/0ddev3" target="_blank"
+            class="social-icon">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://www.facebook.com/share/1GqG9V3Fnf/?mibextid=LQQJ4d"
+            target="_blank" class="social-icon">
+            <i class="bi bi-facebook"></i>
+          </a>
+        </div>
+      </section>
+
+      <script src="code.js"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    </body>
+  </html>
