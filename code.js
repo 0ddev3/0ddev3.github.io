@@ -5,7 +5,7 @@ function showMainContent() {
 
 // Function to reset to the intro screen
 function resetToIntro() {
-    window.location.href = 'intro.html';
+    window.location.href = 'index.html';
 }
 
 document.addEventListener("DOMContentLoaded", function () {
