@@ -46,6 +46,12 @@ body {
     z-index: 1;
 
 }
+#intro:hover {
+
+    color: rgb(255, 233, 159);
+    text-shadow: 1px 3px 5px#f7a500;
+
+}
 
 @keyframes name-fade {
     from {
