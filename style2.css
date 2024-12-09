@@ -16,7 +16,6 @@ img {
     height: auto;
 }
 
-/* Nav bar styling*/
 .navbar {
     width: 100%;
     top: 0;
@@ -42,7 +41,6 @@ img {
     background-color: rgb(56, 7, 56);
 }
 
-/* Personal Header styling */
 #personalHeader {
     margin-top: 20px;
     width: 100%;
@@ -59,7 +57,6 @@ img {
     margin-top: 50px;
 }
 
-/* Header Button styling For Personal Page */
 button.HeaderButton {
     background-color: #ebb13e;
     color: #fff;
@@ -75,7 +72,6 @@ button.HeaderButton:hover {
     cursor: pointer;
 }
 
-/* H1 and H2 Styling */
 h1 {
 
     background-color: #7f5a91;
@@ -99,7 +95,6 @@ h2 {
     text-shadow: 1px 2px 5px #221838;
 }
 
-/* H3 Styling */
 h3 {
     text-shadow: 0px 0px 1px #221838;
     cursor: pointer;
@@ -109,7 +104,6 @@ h3 {
     margin-bottom: 10px;
 }
 
-/* Image Styling */
 img {
     max-width: 100%;
     height: auto;
@@ -123,7 +117,6 @@ img {
     
 }
 
-/* Profile Photo Styling */
 .profile-photo {
     width: 450px;
     height: 450px;
@@ -136,7 +129,6 @@ img {
     margin-right: auto;
 }
 
-/* Heading Styles */
 .AboutMe h2 {
     text-align: left;
     font-size: 2.5em;
@@ -151,7 +143,6 @@ img {
     text-decoration: underline;
 }
 
-/* Paragraph Styles */
 .AboutMe p {
     font-size: 1.1em;
     line-height: 1.6;
@@ -159,7 +150,6 @@ img {
     margin-bottom: 20px;
 }
 
-/* Music List Styling */
 #MusicList {
     list-style-type: square;
     padding-left: 40px;
@@ -179,7 +169,6 @@ img {
     cursor: pointer;
 }
 
-/* My Future Plans Section */
 .FuturePlans {
     background-color: #f9f9f9;
     padding: 40px 20px;
@@ -229,7 +218,6 @@ img {
 
 }
 
-/* Social Media Footer*/
 .social-icon {
     font-size: 30px;
     margin: 0 15px;
@@ -306,7 +294,7 @@ footer {
     background-color: #ebb13e;
 }
 
-/* Larger screens (tablets and desktops) */
+/* Larger screens */
 @media (min-width: 768px) {
     #headerh2 {
         margin-left: 10%;
@@ -325,7 +313,7 @@ footer {
 
 }
 
-/* Smaller screens (phones, below 768px) */
+/* Smaller screens */
 @media (max-width: 767px) {
     .profile-photo {
         max-width: 200px;
