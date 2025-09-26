@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yvette Boyd | Cybersecurity Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- AOS animation library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 <body>
   <header>
@@ -16,26 +20,26 @@
   <main>
     <section id="about">
       <h2>About Me</h2>
-      <div class="card">
+      <div class="card" data-aos="fade-up">
         <p>I’m a junior at Florida Southern College majoring in Computer Science, with a growing passion for cybersecurity—especially in Security Operations Center (SOC) environments. I love solving complex problems, analyzing threats, and building secure systems.</p>
       </div>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
-      <div class="card">
-        <h3>Traceroute Analysis</h3>
+      <div class="card" data-aos="fade-up">
+        <h3><i class="fas fa-network-wired" aria-hidden="true"></i> Traceroute Analysis</h3>
         <p>Practiced network tracing across Windows/macOS with various flags and documented results.</p>
       </div>
-      <div class="card">
-        <h3>Wireshark Lab</h3>
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <h3><i class="fas fa-search" aria-hidden="true"></i> Wireshark Lab</h3>
         <p>Captured and analyzed packets to identify suspicious activity and understand network behavior.</p>
       </div>
     </section>
 
     <section id="certifications">
       <h2>Certifications</h2>
-      <div class="card">
+      <div class="card" data-aos="fade-up">
         <ul>
           <li>CompTIA Network+ (In Progress)</li>
           <li>CompTIA Security+ (Planned)</li>
@@ -45,9 +49,10 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <div class="card">
-        <p>📧 <a href="mailto:yvette@example.com">yvette@example.com</a></p>
-        <p>🔗 <a href="https://www.linkedin.com/in/yvetteboyd">LinkedIn Profile</a></p>
+      <div class="card" data-aos="fade-up">
+        <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:yvette@example.com">yvette@example.com</a></p>
+        <p><i class="fab fa-linkedin" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/yvetteboyd">LinkedIn Profile</a></p>
+        <p><i class="fas fa-file-download" aria-hidden="true"></i> <a href="resume.pdf" download>Download My Resume</a></p>
       </div>
     </section>
   </main>
@@ -57,5 +62,10 @@
   </footer>
 
   <script src="script.js"></script>
+  <!-- AOS animation script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
