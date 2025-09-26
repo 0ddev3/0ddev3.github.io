@@ -1,23 +1,137 @@
+/* Base styles */
 body {
+  font-family: 'Segoe UI', sans-serif;
   background-color: #0d1117;
   color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.card {
-  background-color: #1e1e1e;
-  border: 1px solid #2c2f36;
-}
-
-a, button {
-  background-color: #007acc;
+/* Header */
+header {
+  background-color: #0d1117;
   color: #fff;
+  padding: 40px 20px;
+  text-align: center;
 }
 
-a:hover, button:hover {
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #00ffe7;
+}
+
+header p {
+  font-size: 1.2em;
+  margin: 0;
+  color: #a259ff;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
   background-color: #00ffe7;
   color: #0d1117;
 }
 
-h2, h3 i {
+/* Main content */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 5px;
   color: #a259ff;
+}
+
+/* Card layout */
+.card {
+  background-color: #1e1e1e;
+  border: 1px solid #2c2f36;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 i {
+  margin-right: 10px;
+  color: #007acc;
+}
+
+/* Links */
+a {
+  color: #00ffe7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #a259ff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0d1117;
+  color: #aaa;
+}
+
+/* Dark mode toggle */
+.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+.dark-mode header,
+.dark-mode footer {
+  background-color: #1f1f1f;
+  color: #ccc;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+
+.dark-mode a {
+  color: #66ccff;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  header h1 {
+    font-size: 2em;
+  }
+  .card {
+    padding: 15px;
+  }
 }
