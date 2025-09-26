@@ -1,8 +1,8 @@
 /* Base styles */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #0d1117;
-  color: #e0e0e0;
+  background-color: #0b0f14;
+  color: #d6dee4;
   margin: 0;
   padding: 0;
   transition: background-color 0.3s, color 0.3s;
@@ -10,8 +10,8 @@ body {
 
 /* Header */
 header {
-  background-color: #0d1117;
-  color: #fff;
+  background-color: #0b0f14;
+  color: #00ff88;
   padding: 40px 20px;
   text-align: center;
 }
@@ -19,20 +19,19 @@ header {
 header h1 {
   font-size: 2.5em;
   margin-bottom: 10px;
-  color: #00ffe7;
 }
 
 header p {
   font-size: 1.2em;
   margin: 0;
-  color: #a259ff;
+  color: #aaffcc;
 }
 
 button {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #007acc;
-  color: white;
+  background-color: #00ff88;
+  color: #0b0f14;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -40,8 +39,8 @@ button {
 }
 
 button:hover {
-  background-color: #00ffe7;
-  color: #0d1117;
+  background-color: #aaffcc;
+  color: #0b0f14;
 }
 
 /* Main content */
@@ -58,14 +57,14 @@ section {
 h2 {
   font-size: 1.8em;
   margin-bottom: 20px;
-  border-bottom: 2px solid #007acc;
+  border-bottom: 2px solid #00ff88;
   padding-bottom: 5px;
-  color: #a259ff;
+  color: #aaffcc;
 }
 
 /* Card layout */
 .card {
-  background-color: #1e1e1e;
+  background-color: #1a1f26;
   border: 1px solid #2c2f36;
   border-radius: 8px;
   padding: 20px;
@@ -80,26 +79,26 @@ h2 {
 
 .card h3 i {
   margin-right: 10px;
-  color: #007acc;
+  color: #00ff88;
 }
 
 /* Links */
 a {
-  color: #00ffe7;
+  color: #00ff88;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #a259ff;
+  color: #aaffcc;
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #0d1117;
-  color: #aaa;
+  background-color: #0b0f14;
+  color: #888;
 }
 
 /* Dark mode toggle */
@@ -120,7 +119,27 @@ footer {
 }
 
 .dark-mode a {
-  color: #66ccff;
+  color: #66ffcc;
+}
+
+/* Floating contact button */
+.contact-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00ff88;
+  color: #0b0f14;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 1.5em;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+.contact-float:hover {
+  background-color: #aaffcc;
+  color: #0b0f14;
 }
 
 /* Responsive layout */
@@ -135,22 +154,3 @@ footer {
     padding: 15px;
   }
 }
-.contact-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #007acc;
-  color: white;
-  padding: 15px;
-  border-radius: 50%;
-  font-size: 1.5em;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  transition: background-color 0.3s;
-  z-index: 1000;
-}
-
-.contact-float:hover {
-  background-color: #00ffe7;
-  color: #0d1117;
-}
-
