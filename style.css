@@ -65,6 +65,20 @@ h2 {
   transform: translateY(-5px);
 }
 
+.card h3 i {
+  margin-right: 10px;
+  color: #007acc;
+}
+
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 footer {
   text-align: center;
   padding: 20px;
@@ -86,4 +100,20 @@ footer {
 .dark-mode .card {
   background-color: #1e1e1e;
   border-color: #333;
+}
+
+.dark-mode a {
+  color: #66ccff;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  header h1 {
+    font-size: 2em;
+  }
+  .card {
+    padding: 15px;
+  }
 }
