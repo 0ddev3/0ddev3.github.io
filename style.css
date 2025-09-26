@@ -135,3 +135,22 @@ footer {
     padding: 15px;
   }
 }
+.contact-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007acc;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 1.5em;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+.contact-float:hover {
+  background-color: #00ffe7;
+  color: #0d1117;
+}
+
