@@ -1,17 +1,16 @@
-/* Base styles */
+/* Light Mode (default) */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #0b0f14;
-  color: #d6dee4;
+  background-color: #ffffff;
+  color: #1a1a1a;
   margin: 0;
   padding: 0;
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Header */
 header {
-  background-color: #0b0f14;
-  color: #00ff88;
+  background-color: #ffffff;
+  color: #00aa66;
   padding: 40px 20px;
   text-align: center;
 }
@@ -24,14 +23,14 @@ header h1 {
 header p {
   font-size: 1.2em;
   margin: 0;
-  color: #aaffcc;
+  color: #00aa66;
 }
 
 button {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #00ff88;
-  color: #0b0f14;
+  background-color: #00aa66;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -39,37 +38,17 @@ button {
 }
 
 button:hover {
-  background-color: #aaffcc;
-  color: #0b0f14;
+  background-color: #00cc88;
 }
 
-/* Main content */
-main {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-section {
-  margin-bottom: 60px;
-}
-
-h2 {
-  font-size: 1.8em;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #00ff88;
-  padding-bottom: 5px;
-  color: #aaffcc;
-}
-
-/* Card layout */
+/* Cards */
 .card {
-  background-color: #1a1f26;
-  border: 1px solid #2c2f36;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.2s ease;
 }
 
@@ -79,47 +58,54 @@ h2 {
 
 .card h3 i {
   margin-right: 10px;
-  color: #00ff88;
+  color: #00aa66;
 }
 
-/* Links */
 a {
-  color: #00ff88;
+  color: #00aa66;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #aaffcc;
+  color: #00cc88;
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #0b0f14;
+  background-color: #ffffff;
   color: #888;
 }
 
-/* Dark mode toggle */
+/* Dark Mode */
 .dark-mode {
-  background-color: #121212;
-  color: #eee;
+  background-color: #0b0f14;
+  color: #d6dee4;
 }
 
 .dark-mode header,
 .dark-mode footer {
-  background-color: #1f1f1f;
-  color: #ccc;
+  background-color: #0b0f14;
+  color: #00ff88;
 }
 
 .dark-mode .card {
-  background-color: #1e1e1e;
-  border-color: #333;
+  background-color: #1a1f26;
+  border-color: #2c2f36;
 }
 
 .dark-mode a {
-  color: #66ffcc;
+  color: #00ff88;
+}
+
+.dark-mode button {
+  background-color: #00ff88;
+  color: #0b0f14;
+}
+
+.dark-mode button:hover {
+  background-color: #aaffcc;
 }
 
 /* Floating contact button */
@@ -127,8 +113,8 @@ footer {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #00ff88;
-  color: #0b0f14;
+  background-color: #00aa66;
+  color: #ffffff;
   padding: 15px;
   border-radius: 50%;
   font-size: 1.5em;
@@ -138,11 +124,10 @@ footer {
 }
 
 .contact-float:hover {
-  background-color: #aaffcc;
-  color: #0b0f14;
+  background-color: #00cc88;
 }
 
-/* Responsive layout */
+/* Responsive */
 @media (max-width: 768px) {
   body {
     padding: 10px;
