@@ -1,16 +1,21 @@
-/* Light Mode (default) */
+/* Base styles: Light mode default */
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #ffffff;
-  color: #1a1a1a;
+  color: #2c2c2c;
   margin: 0;
   padding: 0;
   transition: background-color 0.3s, color 0.3s;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
 header {
   background-color: #ffffff;
-  color: #00aa66;
+  color: #00c9a7;
   padding: 40px 20px;
   text-align: center;
 }
@@ -18,18 +23,19 @@ header {
 header h1 {
   font-size: 2.5em;
   margin-bottom: 10px;
+  color: #e070a3;
 }
 
 header p {
   font-size: 1.2em;
   margin: 0;
-  color: #00aa66;
+  color: #00c9a7;
 }
 
 button {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #00aa66;
+  background-color: #00c9a7;
   color: #ffffff;
   border: none;
   border-radius: 5px;
@@ -38,12 +44,32 @@ button {
 }
 
 button:hover {
-  background-color: #00cc88;
+  background-color: #ffb6b9;
+  color: #2c2c2c;
 }
 
-/* Cards */
+/* Main content */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00c9a7;
+  padding-bottom: 5px;
+  color: #e070a3;
+}
+
+/* Card layout */
 .card {
-  background-color: #f5f5f5;
+  background-color: #f8f4fc;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
@@ -58,19 +84,21 @@ button:hover {
 
 .card h3 i {
   margin-right: 10px;
-  color: #00aa66;
+  color: #e070a3;
 }
 
+/* Links */
 a {
-  color: #00aa66;
+  color: #00c9a7;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #00cc88;
+  color: #ffb6b9;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
@@ -106,6 +134,7 @@ footer {
 
 .dark-mode button:hover {
   background-color: #aaffcc;
+  color: #0b0f14;
 }
 
 /* Floating contact button */
@@ -113,7 +142,7 @@ footer {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #00aa66;
+  background-color: #00c9a7;
   color: #ffffff;
   padding: 15px;
   border-radius: 50%;
@@ -124,10 +153,11 @@ footer {
 }
 
 .contact-float:hover {
-  background-color: #00cc88;
+  background-color: #ffb6b9;
+  color: #2c2c2c;
 }
 
-/* Responsive */
+/* Responsive layout */
 @media (max-width: 768px) {
   body {
     padding: 10px;
