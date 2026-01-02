@@ -4,72 +4,127 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yvette Boyd | Cybersecurity Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Font Awesome for icons -->
+
+  <!-- CHANGE THIS LINE TO TEST DIFFERENT STYLES -->
+  <link rel="stylesheet" href="style-cyber.css" />
+
+  <!-- Icons + Animations -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <!-- AOS animation library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
+
 <body>
-  <header>
+  <!-- NAVBAR -->
+  <nav>
+    <h2 class="logo">YB</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button onclick="toggleDarkMode()" class="dark-btn">Dark Mode</button>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
     <h1><span id="typed-name"></span></h1>
-    <p>Aspiring Cybersecurity Professional | Networking Student</p>
-    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <p class="tagline">Aspiring SOC Analyst • Cybersecurity Enthusiast • CS @ FSC ’27</p>
+    <a href="#projects" class="btn">View My Work</a>
   </header>
 
   <main>
+
+    <!-- ABOUT -->
     <section id="about">
       <h2>About Me</h2>
       <div class="card" data-aos="fade-up">
-        <p>I’m a junior at Florida Southern College majoring in Computer Science, with a growing passion for cybersecurity—especially in Security Operations Center (SOC) environments. I love solving complex problems, analyzing threats, and building secure systems.</p>
+        <p>
+          Hi, I’m Yvette — a junior at Florida Southern College majoring in Computer Science with a strong focus on cybersecurity, especially SOC operations and threat detection.
+          I love analyzing logs, solving complex problems, and learning tools like Wireshark and Splunk. I’m currently seeking a cybersecurity internship where I can grow, contribute, and gain hands‑on experience.
+        </p>
       </div>
     </section>
 
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid" data-aos="fade-up">
+        <span class="skill">Java</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Wireshark</span>
+        <span class="skill">Splunk</span>
+        <span class="skill">HTML/CSS</span>
+        <span class="skill">TailwindCSS</span>
+        <span class="skill">Vue 3</span>
+        <span class="skill">Pinia</span>
+        <span class="skill">UI/UX Principles</span>
+        <span class="skill">Communication</span>
+        <span class="skill">Attention to Detail</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
     <section id="projects">
       <h2>Projects</h2>
-      <div class="card" data-aos="fade-up">
-        <h3><i class="fas fa-network-wired" aria-hidden="true"></i> Traceroute Analysis</h3>
-        <p>Practiced network tracing across Windows/macOS with various flags and documented results.</p>
-      </div>
-      <div class="card" data-aos="fade-up" data-aos-delay="100">
-        <h3><i class="fas fa-search" aria-hidden="true"></i> Wireshark Lab</h3>
-        <p>Captured and analyzed packets to identify suspicious activity and understand network behavior.</p>
+
+      <div class="project-grid">
+
+        <div class="card" data-aos="fade-up">
+          <h3><i class="fas fa-network-wired"></i> Traceroute Analysis</h3>
+          <p>Performed traceroutes across Windows/macOS, analyzed hops, and documented network behavior.</p>
+          <a href="#" class="project-link">View on GitHub</a>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <h3><i class="fas fa-search"></i> Wireshark Packet Lab</h3>
+          <p>Captured and analyzed packets to identify suspicious activity and understand network traffic patterns.</p>
+          <a href="#" class="project-link">View on GitHub</a>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+          <h3><i class="fas fa-code"></i> Web Development Projects</h3>
+          <p>Assignments and personal projects using HTML, CSS, JavaScript, Vue, and Tailwind.</p>
+          <a href="#" class="project-link">View Collection</a>
+        </div>
+
       </div>
     </section>
 
+    <!-- CERTIFICATIONS -->
     <section id="certifications">
       <h2>Certifications</h2>
       <div class="card" data-aos="fade-up">
         <ul>
+          <li>Google UX Design Foundations — Credential ID: IK8Y9IH5JXLD</li>
+          <li>Adobe Certified Professional: Premiere Pro</li>
           <li>CompTIA Network+ (In Progress)</li>
           <li>CompTIA Security+ (Planned)</li>
         </ul>
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact">
       <h2>Contact</h2>
       <div class="card" data-aos="fade-up">
-        <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:yvette@example.com">yvette@example.com</a></p>
-        <p><i class="fab fa-linkedin" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/yvetteboyd">LinkedIn Profile</a></p>
-        <p><i class="fas fa-file-download" aria-hidden="true"></i> <a href="resume.pdf" download>Download My Resume</a></p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:>ev3boyd@gmail.com">ev3boyd@gmail.com</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yvette-boyd-549402256/">LinkedIn</a></p>
+        <p><i class="fas fa-file-download"></i> <a href="resume.pdf" download>Resume</a></p>
       </div>
     </section>
+
   </main>
 
   <footer>
     <p>&copy; 2025 Yvette Boyd</p>
   </footer>
 
-  <script src="script.js"></script>
-  <!-- AOS animation script -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <a href="mailto:yvette@example.com" class="contact-float" title="Email Me">
-  <i class="fas fa-envelope"></i>
-</a>
+  <a href="mailto:yvette@example.com" class="contact-float"><i class="fas fa-envelope"></i></a>
 
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
