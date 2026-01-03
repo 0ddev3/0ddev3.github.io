@@ -361,3 +361,40 @@ footer {
   transform: scale(1.02);
 }
 
+/* ===========================
+   PROJECT SECTION SPACING FIXES
+=========================== */
+
+/* More space between categories */
+.project-category {
+  margin-top: 60px;   /* was 40px */
+  margin-bottom: 20px; /* was 10px */
+}
+
+/* More space under the neon divider */
+.category-divider {
+  margin-bottom: 40px; /* was 25px */
+}
+
+/* Increase spacing between project cards */
+.project-grid {
+  gap: 35px; /* was default ~20px */
+  margin-bottom: 40px;
+}
+
+/* Add more padding inside cards */
+.card {
+  padding: 30px; /* was 25px */
+}
+
+/* Add breathing room around placeholder images */
+.placeholder-img {
+  margin: 20px 0; /* was 15px */
+}
+
+/* Add space between tags and GitHub link */
+.tags {
+  margin-bottom: 12px;
+}
+
+
