@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yvette Boyd | Cybersecurity Portfolio</title>
 
-  <!-- CHANGE THIS LINE TO TEST DIFFERENT STYLES -->
-  <link rel="stylesheet" href="style-cyber.css" />
+  <!-- CYBERPUNK THEME -->
+  <link rel="stylesheet" href="style-cyberpunk.css" />
 
   <!-- Icons + Animations -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
   <!-- NAVBAR -->
   <nav>
     <h2 class="logo">YB</h2>
@@ -24,12 +25,11 @@
       <li><a href="#certifications">Certifications</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button onclick="toggleDarkMode()" class="dark-btn">Dark Mode</button>
   </nav>
 
   <!-- HERO SECTION -->
   <header class="hero">
-    <h1><span id="typed-name"></span></h1>
+    <h1 class="terminal-type">Yvette Boyd</h1>
     <p class="tagline">Aspiring SOC Analyst • Cybersecurity Enthusiast • CS @ FSC ’27</p>
     <a href="#projects" class="btn">View My Work</a>
   </header>
@@ -109,7 +109,7 @@
     <section id="contact">
       <h2>Contact</h2>
       <div class="card" data-aos="fade-up">
-        <p><i class="fas fa-envelope"></i> <a href="mailto:>ev3boyd@gmail.com">ev3boyd@gmail.com</a></p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:ev3boyd@gmail.com">ev3boyd@gmail.com</a></p>
         <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yvette-boyd-549402256/">LinkedIn</a></p>
         <p><i class="fas fa-file-download"></i> <a href="resume.pdf" download>Resume</a></p>
       </div>
@@ -121,10 +121,15 @@
     <p>&copy; 2025 Yvette Boyd</p>
   </footer>
 
-  <a href="mailto:yvette@example.com" class="contact-float"><i class="fas fa-envelope"></i></a>
+  <!-- FLOATING EMAIL BUTTON -->
+  <a href="mailto:ev3boyd@gmail.com" class="contact-float">
+    <i class="fas fa-envelope"></i>
+  </a>
 
+  <!-- SCRIPTS -->
   <script src="script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>AOS.init();</script>
+
 </body>
 </html>
