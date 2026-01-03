@@ -397,4 +397,25 @@ footer {
   margin-bottom: 12px;
 }
 
+/* Mini gallery for traceroute screenshots */
+.project-gallery {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.project-gallery img {
+  width: 33%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 77, 240, 0.5);
+  box-shadow: 0 0 12px rgba(255, 77, 240, 0.4);
+  transition: 0.3s ease;
+}
+
+.project-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 77, 240, 0.8);
+}
 
