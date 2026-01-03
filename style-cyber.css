@@ -114,15 +114,20 @@ nav ul li a:hover {
 
 /* Terminal Typing Animation */
 .terminal-type {
-  width: 0;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 3rem;
+  color: var(--accent);
+  text-shadow: var(--accent-glow);
   overflow: hidden;
   white-space: nowrap;
   border-right: 3px solid var(--accent);
-  font-size: 3rem;
-  margin: 0 auto;
-  animation: typing 3s steps(20), blink 0.7s infinite step-end alternate;
-  color: var(--accent);
-  text-shadow: var(--accent-glow);
+  animation: typing 3s steps(20) forwards, blink 0.7s step-end infinite;
+}
+
+.terminal-type::before {
+  content: attr(data-text);
 }
 
 @keyframes typing {
@@ -133,6 +138,7 @@ nav ul li a:hover {
 @keyframes blink {
   50% { border-color: transparent }
 }
+
 
 .tagline {
   margin-top: 15px;
