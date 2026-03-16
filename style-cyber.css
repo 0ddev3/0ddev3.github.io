@@ -126,6 +126,14 @@ nav ul li a:hover {
   animation: typing 3s steps(20) forwards, blink 0.7s step-end infinite;
 }
 
+.category-label {
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0.8;
+  cursor: default;
+}
+
+
 .terminal-type::before {
   content: attr(data-text);
 }
