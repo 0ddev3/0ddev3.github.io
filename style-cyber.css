@@ -339,6 +339,18 @@ footer {
   transition: 0.3s ease;
 }
 
+.placeholder-img i {
+  font-size: 48px;
+  color: rgba(255, 77, 240, 0.85);
+  text-shadow: var(--accent-glow);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+
 /* Scanline animation */
 .placeholder-img::before {
   content: "";
