@@ -4,284 +4,359 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yvette Boyd | IT Support & Networking Portfolio</title>
-
-  <!-- CYBERPUNK THEME -->
   <link rel="stylesheet" href="style-cyber.css" />
-
-  <!-- Icons + Animations -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
-
 
 <body>
 
   <!-- NAVBAR -->
   <nav>
-    <h2 class="logo">YB</h2>
+    <h2 class="logo">YB<span>.dev</span></h2>
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#certifications">certs</a></li>
+      <li><a href="#contact">contact</a></li>
     </ul>
+    <button id="theme-toggle" onclick="toggleTheme()">[ light ]</button>
   </nav>
 
-  <!-- HERO SECTION -->
+  <!-- HERO -->
   <header class="hero">
-    <h1 class="terminal-type" data-text="Yvette Boyd"></h1>
-    <p class="tagline">Aspiring SOC Analyst • Cybersecurity Enthusiast • CS @ FSC ’27</p>
-    <a href="#projects" class="btn">View My Work</a>
+    <div class="hero-inner">
+      <div class="hero-bar">
+        <div class="bar-left">
+          <span class="dot red"></span>
+          <span class="dot green"></span>
+          <span class="dot blue"></span>
+        </div>
+        <span>yvette@portfolio ~ $</span>
+      </div>
+      <div class="hero-content">
+        <p class="hero-prompt">$ whoami</p>
+        <h1>Yvette Boyd<span class="cursor"></span></h1>
+        <p class="tagline">
+          Aspiring SOC Analyst
+          <span class="sep">|</span>
+          Cybersecurity Enthusiast
+          <span class="sep">|</span>
+          CS @ FSC '27
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">View My Work</a>
+          <a href="#contact" class="btn">Contact</a>
+        </div>
+      </div>
+    </div>
   </header>
 
   <main>
 
     <!-- ABOUT -->
     <section id="about">
-      <h2>About Me</h2>
-      <div class="card" data-aos="fade-up">
-<p>
-  I’m Yvette — an aspiring IT Support and Networking professional with a growing foundation in hardware, software, and core networking concepts. I’m fascinated by how technology connects and communicates, from the physical components inside a device to the protocols that move data across a network.
-  <br><br>
-  I’m currently preparing for the CompTIA A+ certification and actively building hands‑on skills in troubleshooting, system maintenance, and network fundamentals. I love learning how things work because it empowers me to solve real problems — whether that’s diagnosing issues on my own devices or helping others get their technology running smoothly.
-  <br><br>
-  I’m seeking an internship where I can continue developing my technical abilities, support users, and contribute to a team that values curiosity, reliability, and continuous learning.
-</p>
-
+      <div class="section-header"><h2>// about</h2></div>
+      <div class="panel">
+        <div class="panel-title">about_me.txt</div>
+        <div class="panel-body">
+          <p>
+            I'm Yvette — an aspiring IT Support and Networking professional with a growing foundation in hardware, software, and core networking concepts. I'm fascinated by how technology connects and communicates, from the physical components inside a device to the protocols that move data across a network.
+          </p>
+          <p>
+            I'm currently preparing for the CompTIA A+ certification and actively building hands-on skills in troubleshooting, system maintenance, and network fundamentals. I love learning how things work because it empowers me to solve real problems — whether that's diagnosing issues on my own devices or helping others get their technology running smoothly.
+          </p>
+          <p>
+            I'm seeking an internship where I can continue developing my technical abilities, support users, and contribute to a team that values curiosity, reliability, and continuous learning.
+          </p>
+        </div>
       </div>
     </section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="skills-grid" data-aos="fade-up">
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="section-header"><h2>// skills</h2></div>
+      <div class="panel">
+        <div class="panel-title">skills.json</div>
+        <div class="panel-body">
+          <div class="skills-grid">
 
-    <!-- Networking Fundamentals -->
-    <span class="skill category-label">Networking Fundamentals</span>
-    <span class="skill">Wireshark</span>
+            <span class="skill-category-row">Networking Fundamentals</span>
+            <span class="skill">Wireshark</span>
 
-    <!-- Tools & Technical Knowledge -->
-    <span class="skill category-label">Tools & Technical Knowledge</span>
-    <span class="skill">Command Line (CMD, PowerShell, Linux)</span>
-    <span class="skill">Git & GitHub</span>
-    <span class="skill">Virtual Machines</span>
+            <span class="skill-category-row">Tools & Technical Knowledge</span>
+            <span class="skill">Command Line (CMD, PowerShell, Linux)</span>
+            <span class="skill">Git & GitHub</span>
+            <span class="skill">Virtual Machines</span>
 
-    <!-- Programming & CS Foundations -->
-    <span class="skill category-label">Programming & CS Foundations</span>
-    <span class="skill">Java</span>
-    <span class="skill">JavaScript</span>
-    <span class="skill">HTML/CSS</span>
+            <span class="skill-category-row">Programming & CS Foundations</span>
+            <span class="skill">Java</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">HTML / CSS</span>
 
-    <!-- Professional Skills -->
-    <span class="skill category-label">Professional Skills</span>
-    <span class="skill">Communication</span>
-    <span class="skill">Attention to Detail</span>
-    <span class="skill">Customer Support Mindset</span>
-    <span class="skill">Team Collaboration</span>
+            <span class="skill-category-row">Professional Skills</span>
+            <span class="skill">Communication</span>
+            <span class="skill">Attention to Detail</span>
+            <span class="skill">Customer Support Mindset</span>
+            <span class="skill">Team Collaboration</span>
 
-  </div>
-</section>
-
-  
-<!-- PROJECTS -->
-<section id="projects">
-  <h2 class="glitch" data-text="Projects">Projects</h2>
-
-  <!-- CATEGORY: JAVA PROGRAMS -->
-  <h3 class="project-category">Java Programs</h3>
-  <div class="category-divider"></div>
-
-  <div class="project-grid">
-
-    <!-- MarvelVsDC-Simulation -->
-    <div class="card" data-aos="fade-up">
-      <h3><i class="fas fa-robot"></i> MarvelVsDC-Simulation</h3>
-      <div class="placeholder-img"><i class="fas fa-code"></i></div>
-      <p>A Java-based battle simulator demonstrating OOP, probability logic, and character stat modeling.</p>
-      <div class="tags">
-        <span>Java</span><span>OOP</span><span>Simulation</span>
+          </div>
+        </div>
       </div>
-      <a href="https://github.com/0ddev3/MarvelVsDC-Simulation" target="_blank" class="project-link">View on GitHub</a>
-    </div>
+    </section>
 
-    <!-- FSCrecurse -->
-    <div class="card" data-aos="fade-up" data-aos-delay="100">
-      <h3><i class="fas fa-code-branch"></i> FSCrecurse</h3>
-      <div class="placeholder-img"><i class="fas fa-code"></i></div>
-      <p>A collection of recursion-based Java algorithms demonstrating problem decomposition and logic flow.</p>
-      <div class="tags">
-        <span>Java</span><span>Recursion</span><span>Algorithms</span>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-header"><h2>// projects</h2></div>
+
+      <!-- Java Programs -->
+      <div class="project-category-header">
+        <h3>Java Programs</h3>
       </div>
-      <a href="https://github.com/0ddev3/FSCrecurse" target="_blank" class="project-link">View on GitHub</a>
-    </div>
+      <div class="project-grid">
 
-    <!-- MarvelVsDcFX -->
-    <div class="card" data-aos="fade-up" data-aos-delay="200">
-      <h3><i class="fas fa-bolt"></i> MarvelVsDcFX</h3>
-      <div class="placeholder-img"><i class="fas fa-code"></i></div>
-      <p>A JavaFX-enhanced version of the Marvel vs DC simulator with improved visuals and modular design.</p>
-      <div class="tags">
-        <span>Java</span><span>JavaFX</span><span>Simulation</span>
+        <div class="card" data-aos="fade-up">
+          <div class="card-header">
+            <i class="fas fa-robot"></i>
+            <h3>MarvelVsDC-Simulation</h3>
+          </div>
+          <div class="card-body">
+            <div class="placeholder-img"><i class="fas fa-code"></i></div>
+            <p>A Java-based battle simulator demonstrating OOP, probability logic, and character stat modeling.</p>
+            <div class="tags">
+              <span>Java</span><span>OOP</span><span>Simulation</span>
+            </div>
+            <a href="https://github.com/0ddev3/MarvelVsDC-Simulation" target="_blank" class="project-link">View on GitHub</a>
+          </div>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-header">
+            <i class="fas fa-code-branch"></i>
+            <h3>FSCrecurse</h3>
+          </div>
+          <div class="card-body">
+            <div class="placeholder-img"><i class="fas fa-code"></i></div>
+            <p>A collection of recursion-based Java algorithms demonstrating problem decomposition and logic flow.</p>
+            <div class="tags">
+              <span>Java</span><span>Recursion</span><span>Algorithms</span>
+            </div>
+            <a href="https://github.com/0ddev3/FSCrecurse" target="_blank" class="project-link">View on GitHub</a>
+          </div>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-header">
+            <i class="fas fa-bolt"></i>
+            <h3>MarvelVsDcFX</h3>
+          </div>
+          <div class="card-body">
+            <div class="placeholder-img"><i class="fas fa-code"></i></div>
+            <p>A JavaFX-enhanced version of the Marvel vs DC simulator with improved visuals and modular design.</p>
+            <div class="tags">
+              <span>Java</span><span>JavaFX</span><span>Simulation</span>
+            </div>
+            <a href="https://github.com/0ddev3/MarvelVsDcFX" target="_blank" class="project-link">View on GitHub</a>
+          </div>
+        </div>
+
       </div>
-      <a href="https://github.com/0ddev3/MarvelVsDcFX" target="_blank" class="project-link">View on GitHub</a>
-    </div>
 
-  </div>
-
-
-  <!-- CATEGORY: PYTHON PROGRAMS -->
-  <h3 class="project-category">Python Programs</h3>
-  <div class="category-divider"></div>
-
-  <div class="project-grid">
-
-    <!-- PyGame -->
-    <div class="card" data-aos="fade-up">
-      <h3><i class="fas fa-gamepad"></i> PyGame Project</h3>
-      <div class="placeholder-img"><i class="fas fa-gamepad"></i></div>
-      <p>A Python game built using PyGame, focusing on event handling, sprite movement, and collision detection.</p>
-      <div class="tags">
-        <span>Python</span><span>PyGame</span><span>Game Dev</span>
+      <!-- Python Programs -->
+      <div class="project-category-header">
+        <h3>Python Programs</h3>
       </div>
-      <a href="https://github.com/0ddev3/PyGame" target="_blank" class="project-link">View on GitHub</a>
-    </div>
+      <div class="project-grid">
 
-    <!-- REST API -->
-    <div class="card" data-aos="fade-up" data-aos-delay="100">
-      <h3><i class="fas fa-server"></i> REST API Project</h3>
-      <div class="placeholder-img"><i class="fas fa-server"></i></div>
-      <p>A Python REST API demonstrating routing, JSON handling, and backend fundamentals.</p>
-      <div class="tags">
-        <span>Python</span><span>API</span><span>Backend</span>
+        <div class="card" data-aos="fade-up">
+          <div class="card-header">
+            <i class="fas fa-gamepad"></i>
+            <h3>PyGame Project</h3>
+          </div>
+          <div class="card-body">
+            <div class="placeholder-img"><i class="fas fa-gamepad"></i></div>
+            <p>A Python game built using PyGame, focusing on event handling, sprite movement, and collision detection.</p>
+            <div class="tags">
+              <span>Python</span><span>PyGame</span><span>Game Dev</span>
+            </div>
+            <a href="https://github.com/0ddev3/PyGame" target="_blank" class="project-link">View on GitHub</a>
+          </div>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-header">
+            <i class="fas fa-server"></i>
+            <h3>REST API Project</h3>
+          </div>
+          <div class="card-body">
+            <div class="placeholder-img"><i class="fas fa-server"></i></div>
+            <p>A Python REST API demonstrating routing, JSON handling, and backend fundamentals.</p>
+            <div class="tags">
+              <span>Python</span><span>API</span><span>Backend</span>
+            </div>
+            <a href="https://github.com/0ddev3/REST_API" target="_blank" class="project-link">View on GitHub</a>
+          </div>
+        </div>
+
       </div>
-      <a href="https://github.com/0ddev3/REST_API" target="_blank" class="project-link">View on GitHub</a>
-    </div>
 
-  </div>
-
-
-  <!-- CATEGORY: COLLABORATIVE PROJECTS -->
-  <h3 class="project-category">Collaborative Projects</h3>
-  <div class="category-divider"></div>
-
-  <div class="project-grid">
-
-    <!-- End2Friends -->
-    <div class="card" data-aos="fade-up">
-      <h3><i class="fas fa-users"></i> End2Friends</h3>
-      <div class="placeholder-img"><i class="fas fa-users"></i></div>
-      <p>A collaborative repository showcasing teamwork, version control, and multi-developer workflow.</p>
-      <div class="tags">
-        <span>Collaboration</span><span>Git</span><span>Team Project</span>
+      <!-- Collaborative Projects -->
+      <div class="project-category-header">
+        <h3>Collaborative Projects</h3>
       </div>
-      <a href="https://github.com/0ddev3/End2Friends" target="_blank" class="project-link">View on GitHub</a>
-    </div>
+      <div class="project-grid">
 
-  </div>
+        <div class="card" data-aos="fade-up">
+          <div class="card-header">
+            <i class="fas fa-users"></i>
+            <h3>End2Friends</h3>
+          </div>
+          <div class="card-body">
+            <div class="placeholder-img"><i class="fas fa-users"></i></div>
+            <p>A collaborative repository showcasing teamwork, version control, and multi-developer workflow.</p>
+            <div class="tags">
+              <span>Collaboration</span><span>Git</span><span>Team Project</span>
+            </div>
+            <a href="https://github.com/0ddev3/End2Friends" target="_blank" class="project-link">View on GitHub</a>
+          </div>
+        </div>
 
-
-  <!-- CATEGORY: IT & NETWORKING LABS -->
-  <h3 class="project-category">IT & Networking Labs</h3>
-  <div class="category-divider"></div>
-
-  <div class="project-grid">
-
-    <!-- Traceroute Lab -->
-    <div class="card" data-aos="fade-up">
-      <h3><i class="fas fa-network-wired"></i> Traceroute Analysis</h3>
-      <div class="placeholder-img"><i class="fas fa-network-wired"></i></div>
-      <p>Performed traceroutes across Windows/macOS, analyzed hops, and documented network behavior.</p>
-      <div class="tags">
-        <span>Networking</span><span>Traceroute</span><span>Analysis</span>
       </div>
-      <a href="https://www.linkedin.com/posts/yvette-boyd-549402256_cybersecurity-networking-traceroute-activity-7377333863368257536-YYXL" target="_blank" class="project-link">View on LinkedIn</a>
-    </div>
 
-    <!-- Wireshark Lab -->
-    <div class="card" data-aos="fade-up" data-aos-delay="100">
-      <h3><i class="fas fa-search"></i> Wireshark Packet Lab</h3>
-      <div class="placeholder-img"><i class="fas fa-search"></i></div>
-      <p>Captured and analyzed packets to identify traffic patterns and understand network behavior.</p>
-      <div class="tags">
-        <span>Wireshark</span><span>Packet Analysis</span><span>Networking</span>
+      <!-- IT & Networking Labs -->
+      <div class="project-category-header">
+        <h3>IT & Networking Labs</h3>
       </div>
-      <a href="#" class="project-link">View on GitHub</a>
-    </div>
+      <div class="project-grid">
 
-  </div>
+        <div class="card" data-aos="fade-up">
+          <div class="card-header">
+            <i class="fas fa-network-wired"></i>
+            <h3>Traceroute Analysis</h3>
+          </div>
+          <div class="card-body">
+            <div class="placeholder-img"><i class="fas fa-network-wired"></i></div>
+            <p>Performed traceroutes across Windows/macOS, analyzed hops, and documented network behavior.</p>
+            <div class="tags">
+              <span>Networking</span><span>Traceroute</span><span>Analysis</span>
+            </div>
+            <a href="https://www.linkedin.com/posts/yvette-boyd-549402256_cybersecurity-networking-traceroute-activity-7377333863368257536-YYXL" target="_blank" class="project-link">View on LinkedIn</a>
+          </div>
+        </div>
 
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-header">
+            <i class="fas fa-search"></i>
+            <h3>Wireshark Packet Lab</h3>
+          </div>
+          <div class="card-body">
+            <div class="placeholder-img"><i class="fas fa-search"></i></div>
+            <p>Captured and analyzed packets to identify traffic patterns and understand network behavior.</p>
+            <div class="tags">
+              <span>Wireshark</span><span>Packet Analysis</span><span>Networking</span>
+            </div>
+            <a href="#" class="project-link">View on GitHub</a>
+          </div>
+        </div>
 
-  <!-- CATEGORY: WEB DEVELOPMENT -->
-  <h3 class="project-category">Web Development</h3>
-  <div class="category-divider"></div>
-
-  <div class="project-grid">
-
-    <div class="card" data-aos="fade-up">
-      <h3><i class="fas fa-globe"></i> Web Development Projects</h3>
-      <div class="placeholder-img"><i class="fas fa-globe"></i></div>
-      <p>Assignments and personal projects using HTML, CSS, JavaScript, Vue, and Tailwind.</p>
-      <div class="tags">
-        <span>HTML</span><span>CSS</span><span>JavaScript</span>
       </div>
-      <a href="#" class="project-link">View Collection</a>
-    </div>
 
-  </div>
+      <!-- Web Development -->
+      <div class="project-category-header">
+        <h3>Web Development</h3>
+      </div>
+      <div class="project-grid">
 
-</section>
+        <div class="card" data-aos="fade-up">
+          <div class="card-header">
+            <i class="fas fa-globe"></i>
+            <h3>Web Development Projects</h3>
+          </div>
+          <div class="card-body">
+            <div class="placeholder-img"><i class="fas fa-globe"></i></div>
+            <p>Assignments and personal projects using HTML, CSS, JavaScript, Vue, and Tailwind.</p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <a href="#" class="project-link">View Collection</a>
+          </div>
+        </div>
 
+      </div>
 
+    </section>
 
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+      <div class="section-header"><h2>// certifications</h2></div>
+      <div class="panel">
+        <div class="panel-title">certs.log</div>
+        <div class="panel-body">
+          <ul>
+            <li>
+              <strong>Google UX Design Foundations</strong> — Credential ID: IK8Y9IH5JXLD
+            </li>
+            <li>
+              <strong>Adobe Certified Professional</strong>: Premiere Pro
+            </li>
+            <li>
+              <strong>CompTIA A+</strong>
+              <span class="badge">in progress</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-  <h2>Certifications</h2>
-  <div class="card" data-aos="fade-up">
-    <ul>
-      <li><strong>Google UX Design Foundations</strong> — Credential ID: IK8Y9IH5JXLD</li>
-      <li><strong>Adobe Certified Professional</strong>: Premiere Pro</li>
-      <li><strong>CompTIA A+</strong> — In Progress</li>
-    </ul>
-  </div>
-</section>
-
-
-<!-- CONTACT -->
-<section id="contact">
-  <h2>Contact</h2>
-  <div class="card" data-aos="fade-up">
-    <p><i class="fas fa-envelope"></i> <a href="mailto:ev3boyd@gmail.com">ev3boyd@gmail.com</a></p>
-    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yvette-boyd-549402256/">LinkedIn</a></p>
-    <p><i class="fab fa-github"></i> <a href="https://github.com/0ddev3" target="_blank">GitHub</a></p>
-    <p><i class="fas fa-file-download"></i> <a href="Yvette_Boyd_Resume.pdf" download>Resume</a></p>
-  </div>
-</section>
-
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-header"><h2>// contact</h2></div>
+      <div class="panel">
+        <div class="panel-title">contact.sh</div>
+        <div class="panel-body">
+          <p><i class="fas fa-envelope"></i><a href="mailto:ev3boyd@gmail.com">ev3boyd@gmail.com</a></p>
+          <p><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/yvette-boyd-549402256/" target="_blank">linkedin.com/in/yvette-boyd-549402256</a></p>
+          <p><i class="fab fa-github"></i><a href="https://github.com/0ddev3" target="_blank">github.com/0ddev3</a></p>
+          <p><i class="fas fa-file-download"></i><a href="Yvette_Boyd_Resume.pdf" download>Download Resume</a></p>
+        </div>
+      </div>
+    </section>
 
   </main>
 
-<footer>
-  <p>&copy; 2025 Yvette Boyd</p>
-  <p>
-    <a href="https://github.com/0ddev3"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/yvette-boyd-549402256/"><i class="fab fa-linkedin"></i></a>
-  </p>
-</footer>
+  <footer>
+    <p>&copy; 2025 Yvette Boyd</p>
+    <div>
+      <a href="https://github.com/0ddev3" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/yvette-boyd-549402256/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
 
+  <!-- FLOATING EMAIL BUTTON -->
+  <a href="mailto:ev3boyd@gmail.com" class="contact-float" aria-label="Email Me">
+    <i class="fas fa-envelope"></i>
+  </a>
 
-<!-- FLOATING EMAIL BUTTON -->
-<a href="mailto:ev3boyd@gmail.com" class="contact-float" aria-label="Email Me">
-  <i class="fas fa-envelope"></i>
-</a>
-
-
-  <!-- SCRIPTS -->
   <script src="script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>AOS.init();</script>
+  <script>
+    AOS.init({ duration: 400, once: true });
+
+    function toggleTheme() {
+      const body = document.body;
+      const btn = document.getElementById('theme-toggle');
+      body.classList.toggle('light');
+      btn.textContent = body.classList.contains('light') ? '[ dark ]' : '[ light ]';
+      localStorage.setItem('theme', body.classList.contains('light') ? 'light' : 'dark');
+    }
+
+    // Persist theme across page loads
+    if (localStorage.getItem('theme') === 'light') {
+      document.body.classList.add('light');
+      document.getElementById('theme-toggle').textContent = '[ dark ]';
+    }
+  </script>
 
 </body>
 </html>
